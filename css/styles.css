@@ -1,0 +1,4150 @@
+/*-------------------------
+    Castration of a cat
+-------------------------*/
+.castration_cat button
+{
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+
+    display: inline-block;
+
+    padding: 0;
+
+    cursor: pointer;
+    vertical-align: top;
+
+    border: none;
+    outline: none;
+    background: none;
+}
+
+
+.castration_cat .row
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.castration_cat .swiper-lazy
+{
+    transition: opacity .5s linear;
+
+    opacity: 0;
+}
+
+.castration_cat .swiper-lazy-loaded
+{
+    opacity: 1;
+}
+
+
+
+/*-------------------------------------
+    Castration of a cat - Accordion
+-------------------------------------*/
+.castration_cat .accordion_item + .accordion_item
+{
+    margin-top: 15px;
+}
+
+
+.castration_cat .accordion_item .head
+{
+    position: relative;
+
+    padding: 15px 45px 15px 30px;
+
+    cursor: pointer;
+
+    border-radius: 15px;
+    background: #f4f7fc;
+}
+
+
+.castration_cat .accordion_item .head .title
+{
+    color: #0f256d;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+
+.castration_cat .accordion_item .head .arr
+{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    bottom: 0;
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+    margin: auto;
+
+    transition: transform .2s linear;
+}
+
+
+.castration_cat .accordion_item .data
+{
+    color: #383a4b;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 160%;
+
+    display: none;
+
+    padding: 30px;
+}
+
+.castration_cat .accordion_item .data p
+{
+    margin: 0;
+}
+
+
+.castration_cat .accordion_item.active .head .arr
+{
+    transform: rotate(180deg);
+}
+
+
+
+/*-----------------------------------------
+    Castration of a cat - Form elements
+-----------------------------------------*/
+.form
+{
+    --form_border_color: #dbdced;
+    --form_focus_color: #dbdced;
+    --form_error_color: red;
+    --form_border_radius: 4px;
+    --form_bg_color: #fff;
+    --form_placeholder_color: #9696a1;
+}
+
+
+.form ::-webkit-input-placeholder
+{
+    color: var(--form_placeholder_color);
+}
+
+.form :-moz-placeholder
+{
+    color: var(--form_placeholder_color);
+}
+
+.form ::-moz-placeholder
+{
+    color: var(--form_placeholder_color);
+
+    opacity: 1;
+}
+
+.form :-ms-input-placeholder
+{
+    color: var(--form_placeholder_color);
+}
+
+
+.form .line
+{
+    margin-bottom: 15px;
+}
+
+
+.form .field
+{
+    position: relative;
+}
+
+
+.form .input
+{
+    color: #383a4b;
+    font-family: inherit;
+    font-size: 17px;
+
+    display: block;
+
+    width: 100%;
+    height: 60px;
+    padding: 0 14px;
+
+    transition: border-color .2s linear;
+
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+    background: var(--form_bg_color);
+}
+
+.form .input:-webkit-autofill
+{
+    -webkit-box-shadow: inset 0 0 0 50px var(--form_bg_color) !important;
+}
+
+
+.form .input:focus
+{
+    border-color: var(--form_focus_color);
+}
+
+
+.form .error
+{
+    border-color: var(--form_error_color);
+}
+
+
+.form .checkbox
+{
+    color: #757575;
+    font-size: 15px;
+    line-height: 160%;
+
+    position: relative;
+
+    display: flex;
+
+    min-height: 20px;
+    padding-left: 30px;
+
+    cursor: pointer;
+    letter-spacing: -.15px;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.form .checkbox input
+{
+    display: none;
+}
+
+
+.form .checkbox .check
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 20px;
+    height: 20px;
+
+    transition: .2s linear;
+
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+    background: var(--form_bg_color);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.form .checkbox .check img
+{
+    display: block;
+
+    width: 14px;
+    max-width: 100%;
+    height: 10px;
+    max-height: 100%;
+
+    transition: opacity .2s linear;
+
+    opacity: 0;
+}
+
+
+.form .checkbox a
+{
+    color: currentColor;
+
+    text-decoration: underline;
+}
+
+
+.form .checkbox input:checked ~ .check
+{
+    border-color: #257fdc;
+    background: #257fdc;
+}
+
+.form .checkbox input:checked ~ .check img
+{
+    opacity: 1;
+}
+
+
+.form .submit_btn
+{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 100%;
+
+    display: block;
+
+    width: 100%;
+    padding: 16px 32px;
+
+    letter-spacing: .34px;
+
+    border-radius: 4px;
+    background: #257fdc;
+}
+
+
+
+/*--------------------------------
+    Castration of a cat - Head
+--------------------------------*/
+.castration_cat_head
+{
+    position: relative;
+    z-index: 3;
+
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+
+
+.castration_cat_head .container
+{
+    position: relative;
+    z-index: 3;
+}
+
+
+
+.castration_cat_head .block_title
+{
+    color: #0f256d;
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 80px;
+
+    width: 555px;
+    max-width: 100%;
+    margin-bottom: 106px;
+}
+
+
+
+.castration_cat_head .row
+{
+    margin-bottom: -30px;
+    margin-left: -30px;
+
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.castration_cat_head .row > *
+{
+    width: calc(33.333% - 30px);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+
+.castration_cat_head .item
+{
+    color: #383a4b;
+    font-size: 17px;
+    line-height: 160%;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-radius: 15px;
+}
+
+.castration_cat_head .item.color1
+{
+    background: #f4f7fc;
+}
+
+.castration_cat_head .item.color2
+{
+    background: #f2f8f5;
+}
+
+.castration_cat_head .item.color3
+{
+    background: #f9f7ea;
+}
+
+.castration_cat_head .item.color4
+{
+    background: #fff5ef;
+}
+
+.castration_cat_head .item.color5
+{
+    background: #f4f7fc;
+}
+
+.castration_cat_head .item.color6
+{
+    background: #f8f6fd;
+}
+
+
+.castration_cat_head .item .icon
+{
+    display: flex;
+
+    height: 60px;
+    margin-bottom: 15px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.castration_cat_head .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+.castration_cat_head .exp
+{
+    color: #757575;
+    font-size: 15px;
+    line-height: 160%;
+
+    margin-top: 30px;
+    padding: 0 30px;
+
+    text-align: center;
+    letter-spacing: -.15px;
+}
+
+
+.castration_cat_head .exp a
+{
+    color: currentColor;
+
+    text-decoration: underline;
+}
+
+
+
+.castration_cat_head .bottom
+{
+    color: #fff;
+    font-size: 26px;
+    line-height: 120%;
+
+    display: flex;
+
+    margin-top: 60px;
+    padding: 15px 60px;
+
+    border-radius: 15px;
+    background: #0f256d;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.castration_cat_head .bottom .icon
+{
+    display: flex;
+
+    width: 100px;
+    height: 100px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.castration_cat_head .bottom .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.castration_cat_head .bottom .icon + *
+{
+    width: calc(100% - 160px);
+
+    align-self: center;
+}
+
+
+
+.castration_cat_head .bg,
+.castration_cat_head .mob_bg
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 500px;
+
+    pointer-events: none;
+
+    object-fit: cover;
+}
+
+.castration_cat_head .mob_bg
+{
+    display: none;
+}
+
+
+
+/*----------------------------------
+    Castration of a cat - Action
+----------------------------------*/
+.castration_cat_action
+{
+    color: #fff;
+
+    position: relative;
+    z-index: 3;
+
+    padding: 187px 0;
+
+    text-align: center;
+}
+
+.castration_cat_action:before
+{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background: rgba(0, 0, 0, .50);
+}
+
+
+.castration_cat_action .container
+{
+    position: relative;
+    z-index: 3;
+}
+
+
+
+.castration_cat_action .title
+{
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 120%;
+
+    display: inline-block;
+
+    width: 1140px;
+    max-width: 100%;
+
+    vertical-align: top;
+
+    text-shadow: 0 0 5px 0 #383a4b;
+}
+
+
+.castration_cat_action .btn
+{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 120%;
+
+    display: block;
+
+    margin: 45px auto 0;
+    padding: 22px 32px;
+
+    border-radius: 4px;
+    background: #257fdc;
+}
+
+
+
+.castration_cat_action .bg
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/*-------------------------------------
+    Castration of a cat - Important
+-------------------------------------*/
+.castration_cat_important
+{
+    padding: 75px 0;
+}
+
+
+.castration_cat_important .block_title
+{
+    color: #0f256d;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 120%;
+
+    margin-bottom: 45px;
+}
+
+
+.castration_cat_important .swiper
+{
+    position: relative;
+
+    width: calc(100% + 60px);
+    margin: 0 -30px;
+    padding: 0 30px;
+}
+
+
+.castration_cat_important .swiper-slide
+{
+    width: 458px;
+}
+
+
+.castration_cat_important .item
+{
+    color: #383a4b;
+    font-size: 17px;
+    line-height: 160%;
+
+    padding: 30px;
+
+    border-radius: 15px;
+}
+
+.castration_cat_important .item.color1
+{
+    background: #f4f7fc;
+}
+
+.castration_cat_important .item.color2
+{
+    background: #fff5ef;
+}
+
+.castration_cat_important .item.color3
+{
+    background: #f9f7ea;
+}
+
+.castration_cat_important .item.color4
+{
+    background: #f8f6fd;
+}
+
+
+.castration_cat_important .item .thumb
+{
+    display: flex;
+
+    height: 180px;
+    margin-bottom: 15px;
+    padding: 30px;
+
+    border-radius: 15px;
+    background: #fff;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.castration_cat_important .item .thumb img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.castration_cat_important .item .desc b
+{
+    font-weight: 500;
+}
+
+
+.castration_cat_important .swiper-horizontal > .swiper-pagination-bullets,
+.castration_cat_important .swiper-pagination-bullets.swiper-pagination-horizontal,
+.castration_cat_important .swiper-pagination-custom,
+.castration_cat_important .swiper-pagination-fraction
+{
+    display: none;
+}
+
+
+
+/*-----------------------------------------
+    Castration of a cat - Improves life
+-----------------------------------------*/
+.castration_cat_improves_life
+{
+    padding: 75px 0;
+}
+
+
+.castration_cat_improves_life .block_title
+{
+    color: #0f256d;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 120%;
+
+    width: 908px;
+    max-width: 100%;
+    margin-bottom: 45px;
+}
+
+
+
+.castration_cat_improves_life .image
+{
+    width: 458px;
+    max-width: 100%;
+}
+
+
+.castration_cat_improves_life .image img
+{
+    display: block;
+
+    max-width: 100%;
+}
+
+
+
+.castration_cat_improves_life .text
+{
+    color: var(--text, #383a4b);
+    font-size: 22px;
+    line-height: 160%;
+
+    width: calc(100% - 518px);
+    margin-left: auto;
+}
+
+.castration_cat_improves_life .text > *
+{
+    margin: 0;
+}
+
+.castration_cat_improves_life .text > * + *
+{
+    margin-top: 10px;
+}
+
+.castration_cat_improves_life .text b
+{
+    font-weight: 500;
+}
+
+
+
+.castration_cat_improves_life .bottom
+{
+    color: #fff;
+    font-size: 26px;
+    line-height: 120%;
+
+    display: flex;
+
+    margin-top: 60px;
+    padding: 15px 60px;
+
+    border-radius: 15px;
+    background: #0f256d;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.castration_cat_improves_life .bottom .icon
+{
+    display: flex;
+
+    width: 100px;
+    height: 100px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.castration_cat_improves_life .bottom .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.castration_cat_improves_life .bottom .icon + *
+{
+    width: calc(100% - 160px);
+
+    align-self: center;
+}
+
+
+
+/*---------------------------------------
+    Castration of a cat - Preparation
+---------------------------------------*/
+.castration_cat_preparation
+{
+    padding: 75px 0;
+}
+
+
+.castration_cat_preparation .block_title
+{
+    color: #0f256d;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 120%;
+
+    width: 908px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.castration_cat_preparation .block_desc
+{
+    color: #383a4b;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 160%;
+
+    margin-bottom: 45px;
+}
+
+
+
+.castration_cat_preparation .step + .step
+{
+    margin-top: 60px;
+}
+
+
+.castration_cat_preparation .step .number
+{
+    position: relative;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+.castration_cat_preparation .step .number:before
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 1px;
+    margin: auto;
+
+    content: '';
+
+    background: #0f256d;
+}
+
+.castration_cat_preparation .step .number span
+{
+    color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 40px;
+
+    position: relative;
+    z-index: 3;
+
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+    padding-top: 2px;
+
+    vertical-align: top;
+
+    border-radius: 50%;
+    background: #0f256d;
+}
+
+
+.castration_cat_preparation .step > .desc
+{
+    color: #0f256d;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 160%;
+
+    margin-bottom: 15px;
+}
+
+
+
+.castration_cat_preparation .swiper
+{
+    width: calc(100% + 60px);
+    margin: 0 -30px;
+    padding: 0 30px;
+}
+
+
+.castration_cat_preparation .swiper-button-next:before,
+.castration_cat_preparation .swiper-button-prev:before
+{
+    display: none;
+}
+
+
+.castration_cat_preparation .swiper-horizontal > .swiper-pagination-bullets,
+.castration_cat_preparation .swiper-pagination-bullets.swiper-pagination-horizontal,
+.castration_cat_preparation .swiper-pagination-custom,
+.castration_cat_preparation .swiper-pagination-fraction
+{
+    display: none;
+}
+
+
+.castration_cat_preparation .step1 .item
+{
+    color: #383a4b;
+    font-size: 17px;
+    line-height: 160%;
+
+    padding: 30px;
+
+    border-radius: 15px;
+    background: #f4f7fc;
+}
+
+
+.castration_cat_preparation .step1 .item .icon
+{
+    display: flex;
+
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    padding: 15px;
+
+    border-radius: 50%;
+    background: #fff;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.castration_cat_preparation .step1 .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.castration_cat_preparation .step1 .item .desc
+{
+    display: -webkit-box;
+    overflow: hidden;
+
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.castration_cat_preparation .step1 .item .desc.full
+{
+    display: block;
+    overflow: visible;
+}
+
+
+.castration_cat_preparation .step1 .item .spoler_btn
+{
+    color: #257fdc;
+
+    margin-top: 5px;
+}
+
+
+
+.castration_cat_preparation .step2 .row
+{
+    margin-bottom: -30px;
+    margin-left: -30px;
+}
+
+.castration_cat_preparation .step2 .row > *
+{
+    width: calc(50% - 30px);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+
+.castration_cat_preparation .step2 .item
+{
+    color: #383a4b;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 160%;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.castration_cat_preparation .step2 .item .icon
+{
+    display: flex;
+
+    width: 50px;
+    height: 50px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.castration_cat_preparation .step2 .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.castration_cat_preparation .step2 .item .icon + *
+{
+    width: calc(100% - 65px);
+
+    align-self: center;
+}
+
+
+
+.castration_cat_preparation .bottom
+{
+    color: #8c4960;
+    font-size: 26px;
+    line-height: 120%;
+
+    display: flex;
+
+    margin-top: 60px;
+    padding: 15px 60px;
+
+    border-radius: 15px;
+    background: #ffdbe9;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.castration_cat_preparation .bottom .icon
+{
+    display: flex;
+
+    width: 100px;
+    height: 100px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.castration_cat_preparation .bottom .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.castration_cat_preparation .bottom .icon + *
+{
+    width: calc(100% - 160px);
+
+    align-self: center;
+}
+
+
+
+/*--------------------------------------
+    Castration of a cat - Components
+--------------------------------------*/
+.castration_cat_components
+{
+    padding: 75px 0;
+}
+
+
+.castration_cat_components .block_title
+{
+    color: #0f256d;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 120%;
+
+    width: 908px;
+    max-width: 100%;
+    margin-bottom: 45px;
+}
+
+
+.castration_cat_components .data
+{
+    padding: 30px;
+
+    border-radius: 15px;
+    background: #fff5ef;
+}
+
+
+.castration_cat_components .row
+{
+    margin-bottom: -30px;
+    margin-left: -30px;
+}
+
+.castration_cat_components .row > *
+{
+    width: calc(50% - 30px);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+
+.castration_cat_components .item
+{
+    color: #383a4b;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 160%;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.castration_cat_components .item .icon
+{
+    display: flex;
+
+    width: 55px;
+    height: 55px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.castration_cat_components .item .icon img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+.castration_cat_components .item .icon + *
+{
+    width: calc(100% - 70px);
+
+    align-self: center;
+}
+
+
+
+/*--------------------------------------
+    Castration of a cat - Anesthesia
+--------------------------------------*/
+.castration_cat_anesthesia
+{
+    padding: 75px 0;
+}
+
+
+.castration_cat_anesthesia .block_title
+{
+    color: #0f256d;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 120%;
+
+    width: 908px;
+    max-width: 100%;
+    margin-bottom: 45px;
+}
+
+
+.castration_cat_anesthesia .message
+{
+    color: #383a4b;
+    font-size: 22px;
+    line-height: 160%;
+
+    display: flex;
+
+    margin-bottom: 30px;
+    padding: 5px 35px 5px 60px;
+
+    border-radius: 15px;
+    background: #f4f7fc;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.castration_cat_anesthesia .message .icon
+{
+    display: flex;
+
+    width: 150px;
+    height: 150px;
+
+    order: 2;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.castration_cat_anesthesia .message .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.castration_cat_anesthesia .message .icon + *
+{
+    width: calc(100% - 210px);
+
+    align-self: center;
+}
+
+
+.castration_cat_anesthesia .row
+{
+    margin-bottom: -30px;
+    margin-left: -30px;
+
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.castration_cat_anesthesia .row > *
+{
+    width: calc(50% - 30px);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+
+.castration_cat_anesthesia .item
+{
+    color: #383a4b;
+    font-size: 17px;
+    line-height: 160%;
+
+    padding: 28px;
+
+    text-align: center;
+
+    border: 2px solid #257fdc;
+    border-radius: 15px;
+}
+
+
+.castration_cat_anesthesia .item .icon
+{
+    display: flex;
+
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+
+    border-radius: 50%;
+    background: #f4f7fc;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.castration_cat_anesthesia .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+/*-------------------------------------
+    Castration of a cat - Operation
+-------------------------------------*/
+.castration_cat_operation
+{
+    padding: 75px 0;
+}
+
+
+.castration_cat_operation .block_title
+{
+    color: #0f256d;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 120%;
+
+    width: 908px;
+    max-width: 100%;
+    margin-bottom: 45px;
+}
+
+
+.castration_cat_operation ul
+{
+    display: block;
+
+    width: calc(50% - 30px);
+    margin: 0;
+    padding: 0;
+}
+
+
+.castration_cat_operation ul li
+{
+    color: #383a4b;
+    font-size: 17px;
+    line-height: 160%;
+
+    position: relative;
+
+    display: flex;
+    overflow: hidden;
+
+    padding-left: 45px;
+
+    list-style-type: none;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.castration_cat_operation ul li + li
+{
+    margin-top: 15px;
+}
+
+
+.castration_cat_operation ul li img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 30px;
+    height: 30px;
+}
+
+
+.castration_cat_operation .image
+{
+    width: calc(50% - 15px);
+    margin-left: auto;
+
+    border-radius: 15px;
+}
+
+.castration_cat_operation .image img
+{
+    display: block;
+
+    width: 100%;
+
+    border-radius: 15px;
+}
+
+
+.castration_cat_operation .btn
+{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 100%;
+
+    display: block;
+
+    margin: 45px auto 0;
+    padding: 16px 32px;
+
+    letter-spacing: .34px;
+
+    border-radius: 4px;
+    background: #257fdc;
+}
+
+
+
+/*------------------------------------------
+    Castration of a cat - Rehabilitation
+------------------------------------------*/
+.castration_cat_rehabilitation
+{
+    padding: 75px 0;
+}
+
+
+.castration_cat_rehabilitation .head
+{
+    display: flex;
+
+    margin-bottom: 45px;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.castration_cat_rehabilitation .block_title
+{
+    color: #0f256d;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+
+.castration_cat_rehabilitation .duration
+{
+    color: #383a4b;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 160%;
+
+    display: flex;
+
+    margin-left: auto;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+.castration_cat_rehabilitation .duration img
+{
+    position: relative;
+    top: -2px;
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+
+.castration_cat_rehabilitation .swiper
+{
+    overflow: visible !important;
+}
+
+
+.castration_cat_rehabilitation .swiper-horizontal > .swiper-pagination-bullets,
+.castration_cat_rehabilitation .swiper-pagination-bullets.swiper-pagination-horizontal,
+.castration_cat_rehabilitation .swiper-pagination-custom,
+.castration_cat_rehabilitation .swiper-pagination-fraction
+{
+    display: none;
+}
+
+
+.castration_cat_rehabilitation .item
+{
+    color: #383a4b;
+    font-size: 19px;
+    line-height: 160%;
+
+    padding: 30px;
+
+    border-radius: 15px;
+}
+
+.castration_cat_rehabilitation .item.color1
+{
+    background: #fff5ef;
+}
+
+.castration_cat_rehabilitation .item.color2
+{
+    background: #f2f8f5;
+}
+
+
+.castration_cat_rehabilitation .item .thumb
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 330px;
+    max-width: 100%;
+    height: 220px;
+    margin-bottom: 15px;
+
+    border-radius: 15px;
+    background: #ddd;
+}
+
+.castration_cat_rehabilitation .item .thumb img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+
+/*-----------------------------------
+    Castration of a cat - Doctors
+-----------------------------------*/
+.castration_cat_doctors
+{
+    padding: 75px 0;
+
+    background: #f4f7fc;
+}
+
+
+.castration_cat_doctors .block_title
+{
+    color: #0f256d;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 120%;
+
+    margin-bottom: 45px;
+}
+
+
+.castration_cat_doctors .swiper
+{
+    overflow: visible !important;
+}
+
+
+.castration_cat_doctors .person .photo
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 300px;
+    max-width: 100%;
+    height: 300px;
+    margin-bottom: 24px;
+
+    border-radius: 10px;
+    background: #ddd;
+}
+
+.castration_cat_doctors .person .photo img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+
+    object-fit: cover;
+}
+
+
+.castration_cat_doctors .person .name
+{
+    color: #0f256d;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+
+.castration_cat_doctors .person .post
+{
+    color: #383a4b;
+    font-size: 15px;
+    line-height: 160%;
+
+    display: flex;
+
+    margin-top: 12px;
+
+    letter-spacing: -.15px;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.castration_cat_doctors .person .post .icon
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+}
+
+.castration_cat_doctors .person .post .icon + *
+{
+    width: calc(100% - 32px);
+    margin-left: auto;
+
+    align-self: center;
+}
+
+
+.castration_cat_doctors .person .experience
+{
+    color: #383a4b;
+    font-size: 15px;
+    line-height: 160%;
+
+    display: flex;
+
+    margin-top: 12px;
+
+    letter-spacing: -.15px;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.castration_cat_doctors .person .experience .icon
+{
+    display: block;
+
+    width: 20px;
+    height: 20px;
+}
+
+.castration_cat_doctors .person .experience .icon + *
+{
+    width: calc(100% - 32px);
+    margin-left: auto;
+
+    align-self: center;
+}
+
+
+
+/*---------------------------------
+    Castration of a cat - Myths
+---------------------------------*/
+.castration_cat_myths
+{
+    padding: 75px 0;
+}
+
+
+.castration_cat_myths .block_title
+{
+    color: #0f256d;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 120%;
+
+    margin-bottom: 45px;
+}
+
+
+.castration_cat_myths .swiper
+{
+    overflow: visible !important;
+}
+
+
+.castration_cat_myths .item
+{
+    color: #fff;
+    font-size: 17px;
+    line-height: 160%;
+
+    text-align: center;
+
+    perspective: 1000px;
+}
+
+
+.castration_cat_myths .item .front,
+.castration_cat_myths .item .back
+{
+    position: relative;
+
+    height: 375px;
+    padding: 60px 30px;
+
+    transition: .5s linear;
+
+    border-radius: 15px;
+    background: #0f256d;
+
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.castration_cat_myths .item .back
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    padding: 28px;
+
+    transform: rotateY(-180deg);
+
+    border: 2px solid #fc006b;
+}
+
+
+.castration_cat_myths .item .icon
+{
+    display: flex;
+
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 30px;
+    padding: 15px;
+
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .10);
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.castration_cat_myths .item .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.castration_cat_myths .item .question
+{
+    font-weight: 500;
+}
+
+
+.castration_cat_myths .item .flip_icon
+{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    display: block;
+
+    width: 24px;
+    height: 24px;
+
+    opacity: .5;
+}
+
+
+.castration_cat_myths .item .answer
+{
+    margin-bottom: 15px;
+}
+
+.castration_cat_myths .item .answer span
+{
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 28px;
+
+    display: inline-block;
+
+    height: 30px;
+    padding: 0 10px;
+    padding-top: 2px;
+
+    vertical-align: top;
+
+    border-radius: 50px;
+    background: #fc006b;
+}
+
+
+.castration_cat_myths .item .desc
+{
+    text-align: left;
+}
+
+
+.castration_cat_myths .item:hover .front
+{
+    transform: rotateY(180deg);
+}
+
+.castration_cat_myths .item:hover .back
+{
+    transform: rotateY(0deg);
+}
+
+
+
+/*-------------------------------
+    Castration of a cat - FAQ
+-------------------------------*/
+.castration_cat_FAQ
+{
+    padding: 75px 0;
+}
+
+
+.castration_cat_FAQ .block_title
+{
+    color: #0f256d;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 120%;
+
+    margin-bottom: 45px;
+}
+
+
+.castration_cat_FAQ .bottom
+{
+    display: flex;
+
+    margin-top: 45px;
+    padding-top: 15px;
+
+    border-top: 1px solid #dbdced;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.castration_cat_FAQ .bottom .label
+{
+    color: #383a4b;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+
+.castration_cat_FAQ .bottom .btn
+{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 100%;
+
+    margin-left: auto;
+    padding: 16px 32px;
+
+    letter-spacing: .34px;
+
+    border-radius: 4px;
+    background: #257fdc;
+}
+
+
+
+/*----------------------------------
+    Castration of a cat - Prices
+----------------------------------*/
+.castration_cat_prices
+{
+    padding: 75px 0;
+
+    background: #f4f7fc;
+}
+
+
+.castration_cat_prices .block_title
+{
+    color: #0f256d;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 120%;
+
+    margin-bottom: 45px;
+}
+
+
+.castration_cat_prices table
+{
+    width: 100%;
+
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+.castration_cat_prices table th
+{
+    color: #6b75a2;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 160%;
+
+    padding-bottom: 15px;
+
+    text-align: left;
+    vertical-align: middle;
+}
+
+.castration_cat_prices table th:not(:empty) + th
+{
+    padding-left: 30px;
+}
+
+
+.castration_cat_prices table td
+{
+    padding: 15px 0;
+
+    text-align: left;
+    vertical-align: middle;
+
+    border-top: 1px solid #6b75a2;
+}
+
+.castration_cat_prices table td.price
+{
+    color: #383a4b;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 120%;
+
+    white-space: nowrap;
+}
+
+.castration_cat_prices table td.label
+{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 160%;
+
+    white-space: normal;
+
+    border-color: transparent;
+}
+
+.castration_cat_prices table td.price + td
+{
+    padding-left: 30px;
+}
+
+
+.castration_cat_prices .exp
+{
+    color: #757575;
+    font-size: 17px;
+    line-height: 160%;
+
+    margin-top: 45px;
+}
+
+
+.castration_cat_prices .bottom
+{
+    color: #8c4960;
+    font-size: 17px;
+    line-height: 160%;
+
+    display: flex;
+
+    margin-top: 60px;
+    padding: 15px 30px;
+
+    border-radius: 15px;
+    background: #ffdbe9;
+
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+
+.castration_cat_prices .bottom .icon
+{
+    display: flex;
+
+    width: 40px;
+    height: 40px;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.castration_cat_prices .bottom .icon img
+{
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.castration_cat_prices .bottom .icon + *
+{
+    width: calc(100% - 70px);
+}
+
+
+
+/*---------------------------------
+    Castration of a cat - Order
+---------------------------------*/
+.castration_cat_order
+{
+    padding: 75px 0;
+}
+
+
+.castration_cat_order .data
+{
+    display: flex;
+
+    padding: 28px;
+
+    border: 2px solid #257fdc;
+    border-radius: 15px;
+
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+
+
+.castration_cat_order .image
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: calc(100% - 525px);
+
+    border-radius: 15px;
+    background: #ddd;
+}
+
+.castration_cat_order .image img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 15px;
+
+    object-fit: cover;
+}
+
+
+.castration_cat_order .form
+{
+    width: 480px;
+    max-width: 100%;
+}
+
+
+.castration_cat_order .form .title
+{
+    color: #0f256d;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 120%;
+
+    margin-bottom: 66px;
+}
+
+
+
+/*----------------------------------------
+    Castration of a cat - Action block
+----------------------------------------*/
+.castration_action_block
+{
+    color: #fff;
+
+    padding: 60px 0;
+
+    background: #257fdc;
+}
+
+
+.castration_action_block .row
+{
+    padding: 28px;
+
+    border: 2px solid #257fdc;
+    border-radius: 15px;
+}
+
+
+.castration_action_block .image
+{
+    width: 555px;
+    max-width: 100%;
+}
+
+.castration_action_block .image img
+{
+    display: block;
+
+    width: 100%;
+
+    border-radius: 15px;
+}
+
+
+.castration_action_block .data
+{
+    width: 479px;
+    max-width: 100%;
+    margin-left: auto;
+
+    align-self: center;
+}
+
+
+.castration_action_block .title
+{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+
+.castration_action_block .btn
+{
+    color: #257fdc;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 100%;
+
+    margin-top: 45px;
+    padding: 16px 32px;
+
+    letter-spacing: .34px;
+
+    border-radius: 4px;
+    background: #fff;
+}
+
+
+
+@media print,
+(max-width: 1439px)
+{
+    /*-------------------------------------
+        Castration of a cat - Accordion
+    -------------------------------------*/
+    .castration_cat .accordion_item .head
+    {
+        padding: 15px 45px 15px 24px;
+    }
+
+    .castration_cat .accordion_item .head .title
+    {
+        font-size: 18px;
+    }
+
+
+    .castration_cat .accordion_item .data
+    {
+        font-size: 16px;
+
+        padding: 24px;
+    }
+
+
+
+    /*--------------------------------
+        Castration of a cat - Head
+    --------------------------------*/
+    .castration_cat_head .block_title
+    {
+        font-size: 64px;
+        line-height: 72px;
+
+        width: 480px;
+        margin-bottom: 100px;
+    }
+
+
+    .castration_cat_head .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .castration_cat_head .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .castration_cat_head .item
+    {
+        font-size: 16px;
+
+        padding: 24px;
+    }
+
+
+    .castration_cat_head .bottom
+    {
+        font-size: 22px;
+    }
+
+
+    .castration_cat_head .bottom .icon
+    {
+        width: 90px;
+        height: 90px;
+    }
+
+    .castration_cat_head .bottom .icon + *
+    {
+        width: calc(100% - 140px);
+    }
+
+
+    .castration_cat_head .bg
+    {
+        height: 480px;
+    }
+
+
+
+    /*----------------------------------
+        Castration of a cat - Action
+    ----------------------------------*/
+    .castration_cat_action
+    {
+        padding: 140px 0;
+    }
+
+
+    .castration_cat_action .title
+    {
+        font-size: 40px;
+    }
+
+
+    .castration_cat_action .btn
+    {
+        font-size: 22px;
+
+        margin-top: 40px;
+        padding: 20px 32px;
+    }
+
+
+
+    /*-------------------------------------
+        Castration of a cat - Important
+    -------------------------------------*/
+    .castration_cat_important
+    {
+        padding: 70px 0;
+    }
+
+
+    .castration_cat_important .block_title
+    {
+        font-size: 32px;
+
+        width: 800px;
+        margin-bottom: 40px;
+    }
+
+
+    .castration_cat_important .swiper-slide
+    {
+        width: 380px;
+    }
+
+
+    .castration_cat_important .item
+    {
+        font-size: 16px;
+
+        padding: 24px;
+    }
+
+
+    .castration_cat_important .item .thumb
+    {
+        height: 160px;
+    }
+
+
+
+    /*-----------------------------------------
+        Castration of a cat - Improves life
+    -----------------------------------------*/
+    .castration_cat_improves_life
+    {
+        padding: 70px 0;
+    }
+
+
+    .castration_cat_improves_life .block_title
+    {
+        font-size: 32px;
+
+        width: 800px;
+        margin-bottom: 40px;
+    }
+
+
+    .castration_cat_improves_life .text
+    {
+        font-size: 18px;
+    }
+
+
+    .castration_cat_improves_life .bottom
+    {
+        font-size: 22px;
+    }
+
+
+    .castration_cat_improves_life .bottom .icon
+    {
+        width: 90px;
+        height: 90px;
+    }
+
+    .castration_cat_improves_life .bottom .icon + *
+    {
+        width: calc(100% - 140px);
+    }
+
+
+
+    /*---------------------------------------
+        Castration of a cat - Preparation
+    ---------------------------------------*/
+    .castration_cat_preparation
+    {
+        padding: 70px 0;
+    }
+
+
+    .castration_cat_preparation .block_title
+    {
+        font-size: 32px;
+
+        width: 800px;
+    }
+
+
+    .castration_cat_preparation .block_desc
+    {
+        font-size: 18px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .castration_cat_preparation .step > .desc
+    {
+        font-size: 16px;
+    }
+
+
+    .castration_cat_preparation .swiper
+    {
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+    }
+
+
+    .castration_cat_preparation .step1 .item
+    {
+        font-size: 16px;
+
+        padding: 24px;
+    }
+
+
+    .castration_cat_preparation .step2 .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .castration_cat_preparation .step2 .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .castration_cat_preparation .step2 .item
+    {
+        font-size: 18px;
+    }
+
+
+    .castration_cat_preparation .bottom
+    {
+        font-size: 22px;
+    }
+
+
+    .castration_cat_preparation .bottom .icon
+    {
+        width: 90px;
+        height: 90px;
+    }
+
+    .castration_cat_preparation .bottom .icon + *
+    {
+        width: calc(100% - 140px);
+    }
+
+
+
+    /*--------------------------------------
+        Castration of a cat - Components
+    --------------------------------------*/
+    .castration_cat_components
+    {
+        padding: 70px 0;
+    }
+
+
+    .castration_cat_components .block_title
+    {
+        font-size: 32px;
+
+        width: 800px;
+        margin-bottom: 40px;
+    }
+
+
+    .castration_cat_components .data
+    {
+        padding: 24px;
+    }
+
+
+    .castration_cat_components .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .castration_cat_components .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .castration_cat_components .item
+    {
+        font-size: 16px;
+    }
+
+
+    .castration_cat_components .item .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .castration_cat_components .item .icon + *
+    {
+        width: calc(100% - 65px);
+    }
+
+
+
+    /*--------------------------------------
+        Castration of a cat - Anesthesia
+    --------------------------------------*/
+    .castration_cat_anesthesia
+    {
+        padding: 70px 0;
+    }
+
+
+    .castration_cat_anesthesia .block_title
+    {
+        font-size: 32px;
+
+        width: 800px;
+        margin-bottom: 40px;
+    }
+
+
+    .castration_cat_anesthesia .message
+    {
+        font-size: 20px;
+
+        margin-bottom: 24px;
+        padding: 5px 60px;
+    }
+
+
+    .castration_cat_anesthesia .message .icon
+    {
+        width: 140px;
+        height: 140px;
+    }
+
+
+    .castration_cat_anesthesia .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .castration_cat_anesthesia .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .castration_cat_anesthesia .item
+    {
+        font-size: 16px;
+
+        padding: 24px;
+    }
+
+
+
+    /*-------------------------------------
+        Castration of a cat - Operation
+    -------------------------------------*/
+    .castration_cat_operation
+    {
+        padding: 70px 0;
+    }
+
+
+    .castration_cat_operation .block_title
+    {
+        font-size: 32px;
+
+        width: 800px;
+        margin-bottom: 40px;
+    }
+
+
+    .castration_cat_operation ul li
+    {
+        font-size: 16px;
+    }
+
+    .castration_cat_operation ul li + li
+    {
+        margin-top: 12px;
+    }
+
+
+    .castration_cat_operation .btn
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*------------------------------------------
+        Castration of a cat - Rehabilitation
+    ------------------------------------------*/
+    .castration_cat_rehabilitation
+    {
+        padding: 70px 0;
+    }
+
+
+    .castration_cat_rehabilitation .head
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .castration_cat_rehabilitation .block_title
+    {
+        font-size: 32px;
+    }
+
+
+    .castration_cat_rehabilitation .duration
+    {
+        font-size: 18px;
+    }
+
+
+    .castration_cat_rehabilitation .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .castration_cat_rehabilitation .row > *
+    {
+        width: calc(50% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+    .castration_cat_rehabilitation .item
+    {
+        font-size: 18px;
+
+        padding: 24px;
+    }
+
+
+
+    /*-----------------------------------
+        Castration of a cat - Doctors
+    -----------------------------------*/
+    .castration_cat_doctors
+    {
+        padding: 70px 0;
+    }
+
+
+    .castration_cat_doctors .block_title
+    {
+        font-size: 32px;
+
+        margin-bottom: 40px;
+    }
+
+
+
+    /*---------------------------------
+        Castration of a cat - Myths
+    ---------------------------------*/
+    .castration_cat_myths
+    {
+        padding: 70px 0;
+    }
+
+
+    .castration_cat_myths .block_title
+    {
+        font-size: 32px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .castration_cat_myths .row
+    {
+        margin-bottom: -24px;
+        margin-left: -24px;
+    }
+
+    .castration_cat_myths .row > *
+    {
+        width: calc(33.333% - 24px);
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+
+
+    /*-------------------------------
+        Castration of a cat - FAQ
+    -------------------------------*/
+    .castration_cat_FAQ
+    {
+        padding: 70px 0;
+    }
+
+
+    .castration_cat_FAQ .block_title
+    {
+        font-size: 32px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .castration_cat_FAQ .bottom
+    {
+        margin-top: 40px;
+    }
+
+
+    .castration_cat_FAQ .bottom .label
+    {
+        font-size: 20px;
+    }
+
+
+
+    /*----------------------------------
+        Castration of a cat - Prices
+    ----------------------------------*/
+    .castration_cat_prices
+    {
+        padding: 70px 0;
+    }
+
+
+    .castration_cat_prices .block_title
+    {
+        font-size: 32px;
+
+        margin-bottom: 40px;
+    }
+
+
+    .castration_cat_prices table th
+    {
+        font-size: 16px;
+    }
+
+    .castration_cat_prices table th:not(:empty) + th
+    {
+        padding-left: 24px;
+    }
+
+
+    .castration_cat_prices table td.label
+    {
+        font-size: 20px;
+    }
+
+    .castration_cat_prices table td.price
+    {
+        font-size: 24px;
+    }
+
+    .castration_cat_prices table td.price + td
+    {
+        padding-left: 24px;
+    }
+
+
+    .castration_cat_prices .exp
+    {
+        font-size: 16px;
+
+        margin-top: 40px;
+    }
+
+
+    .castration_cat_prices .bottom
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*---------------------------------
+        Castration of a cat - Order
+    ---------------------------------*/
+    .castration_cat_order
+    {
+        padding: 70px 0;
+    }
+
+
+    .castration_cat_order .data
+    {
+        padding: 22px;
+    }
+
+
+    .castration_cat_order .image
+    {
+        width: calc(100% - 520px);
+    }
+
+
+    .castration_cat_order .form .title
+    {
+        margin-bottom: 40px;
+    }
+
+
+
+    /*----------------------------------------
+        Castration of a cat - Action block
+    ----------------------------------------*/
+    .castration_action_block .image
+    {
+        width: calc(100% - 400px);
+    }
+
+
+    .castration_action_block .data
+    {
+        width: 360px;
+    }
+
+
+    .castration_action_block .title
+    {
+        font-size: 28px;
+    }
+
+
+    .castration_action_block .btn
+    {
+        margin-top: 40px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1279px)
+{
+    /*---------------------------------
+        Castration of a cat - Myths
+    ---------------------------------*/
+    .castration_cat_myths .item .front,
+    .castration_cat_myths .item .back
+    {
+        height: 405px;
+    }
+}
+
+
+
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------------
+        Castration of a cat
+    -------------------------*/
+    .castration_cat .container
+    {
+        padding: 0 20px;
+    }
+
+
+
+    /*-----------------------------------------
+        Castration of a cat - Form elements
+    -----------------------------------------*/
+    .form .checkbox
+    {
+        line-height: 100%;
+    }
+
+
+
+    /*-------------------------------------
+        Castration of a cat - Accordion
+    -------------------------------------*/
+    .castration_cat .accordion_item + .accordion_item
+    {
+        margin-top: 10px;
+    }
+
+
+    .castration_cat .accordion_item .head
+    {
+        padding: 10px 34px 10px 20px;
+    }
+
+
+    .castration_cat .accordion_item .head .title
+    {
+        font-size: 17px;
+    }
+
+
+    .castration_cat .accordion_item .head .arr
+    {
+        right: 10px;
+    }
+
+
+    .castration_cat .accordion_item .data
+    {
+        font-size: 15px;
+
+        padding: 20px;
+    }
+
+
+
+    /*--------------------------------
+        Castration of a cat - Head
+    --------------------------------*/
+    .castration_cat_head
+    {
+        padding-top: 30px;
+        padding-bottom: 45px;
+    }
+
+
+    .castration_cat_head .block_title
+    {
+        font-size: 36px;
+        line-height: 120%;
+
+        width: 100%;
+        margin-bottom: 247px;
+    }
+
+
+    .castration_cat_head .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .castration_cat_head .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .castration_cat_head .item
+    {
+        font-size: 15px;
+
+        padding: 20px;
+    }
+
+
+    .castration_cat_head .bg
+    {
+        height: 400px;
+    }
+
+
+    .castration_cat_head .exp
+    {
+        font-size: 13px;
+
+        margin-top: 20px;
+        padding: 0;
+    }
+
+
+    .castration_cat_head .bottom
+    {
+        font-size: 15px;
+
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+    .castration_cat_head .bottom .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .castration_cat_head .bottom .icon + *
+    {
+        width: calc(100% - 65px);
+    }
+
+
+
+    /*----------------------------------
+        Castration of a cat - Action
+    ----------------------------------*/
+    .castration_cat_action
+    {
+        padding: 106px 0;
+    }
+
+
+    .castration_cat_action .title
+    {
+        font-size: 26px;
+    }
+
+
+    .castration_cat_action .btn
+    {
+        font-size: 17px;
+
+        margin-top: 45px;
+        padding: 16px 32px;
+    }
+
+
+
+    /*-------------------------------------
+        Castration of a cat - Important
+    -------------------------------------*/
+    .castration_cat_important
+    {
+        padding: 45px 0;
+    }
+
+
+    .castration_cat_important .block_title
+    {
+        font-size: 26px;
+
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .castration_cat_important .swiper-button-next,
+    .castration_cat_important .swiper-button-prev
+    {
+        display: none !important;
+    }
+
+    .castration_cat_important .swiper-horizontal > .swiper-pagination-bullets,
+    .castration_cat_important .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .castration_cat_important .swiper-pagination-custom,
+    .castration_cat_important .swiper-pagination-fraction
+    {
+        display: flex;
+    }
+
+
+    .castration_cat_important .swiper-slide
+    {
+        width: auto;
+    }
+
+
+    .castration_cat_important .item
+    {
+        font-size: 15px;
+
+        padding: 20px;
+    }
+
+
+    .castration_cat_important .item .thumb
+    {
+        height: 150px;
+    }
+
+
+
+    /*-----------------------------------------
+        Castration of a cat - Improves life
+    -----------------------------------------*/
+    .castration_cat_improves_life
+    {
+        padding: 45px 0;
+    }
+
+
+    .castration_cat_improves_life .block_title
+    {
+        font-size: 26px;
+
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .castration_cat_improves_life .image
+    {
+        width: 300px;
+    }
+
+
+    .castration_cat_improves_life .text
+    {
+        font-size: 17px;
+
+        width: calc(100% - 320px);
+    }
+
+
+    .castration_cat_improves_life .bottom
+    {
+        font-size: 15px;
+
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+
+    .castration_cat_improves_life .bottom .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .castration_cat_improves_life .bottom .icon + *
+    {
+        width: calc(100% - 65px);
+    }
+
+
+
+    /*---------------------------------------
+        Castration of a cat - Preparation
+    ---------------------------------------*/
+    .castration_cat_preparation
+    {
+        padding: 48px 0;
+    }
+
+
+    .castration_cat_preparation .block_title
+    {
+        font-size: 26px;
+
+        width: 100%;
+    }
+
+
+    .castration_cat_preparation .block_desc
+    {
+        font-size: 17px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .castration_cat_preparation .step > .desc
+    {
+        font-size: 15px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .castration_cat_preparation .swiper
+    {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .castration_cat_preparation .swiper-button-next,
+    .castration_cat_preparation .swiper-button-prev
+    {
+        display: none;
+    }
+
+    .castration_cat_preparation .swiper-horizontal > .swiper-pagination-bullets,
+    .castration_cat_preparation .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .castration_cat_preparation .swiper-pagination-custom,
+    .castration_cat_preparation .swiper-pagination-fraction
+    {
+        display: flex;
+    }
+
+
+    .castration_cat_preparation .step1 .item
+    {
+        font-size: 15px;
+
+        padding: 20px;
+    }
+
+
+    .castration_cat_preparation .step + .step
+    {
+        margin-top: 40px;
+    }
+
+
+    .castration_cat_preparation .step2 .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .castration_cat_preparation .step2 .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .castration_cat_preparation .step2 .item
+    {
+        font-size: 17px;
+    }
+
+
+    .castration_cat_preparation .bottom
+    {
+        font-size: 15px;
+
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+
+    .castration_cat_preparation .bottom .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .castration_cat_preparation .bottom .icon + *
+    {
+        width: calc(100% - 65px);
+    }
+
+
+
+    /*--------------------------------------
+        Castration of a cat - Components
+    --------------------------------------*/
+    .castration_cat_components
+    {
+        padding: 45px 0;
+    }
+
+
+    .castration_cat_components .block_title
+    {
+        font-size: 26px;
+
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .castration_cat_components .data
+    {
+        padding: 20px;
+    }
+
+
+    .castration_cat_components .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .castration_cat_components .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .castration_cat_components .item
+    {
+        font-size: 15px;
+    }
+
+
+    .castration_cat_components .item .icon
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .castration_cat_components .item .icon + *
+    {
+        width: calc(100% - 50px);
+    }
+
+
+
+    /*--------------------------------------
+        Castration of a cat - Anesthesia
+    --------------------------------------*/
+    .castration_cat_anesthesia
+    {
+        padding: 45px 0;
+    }
+
+
+    .castration_cat_anesthesia .block_title
+    {
+        font-size: 26px;
+
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .castration_cat_anesthesia .message
+    {
+        font-size: 15px;
+
+        margin-bottom: 20px;
+        padding: 3px 18px 2px 30px;
+    }
+
+
+    .castration_cat_anesthesia .message .icon
+    {
+        width: 75px;
+        height: 75px;
+    }
+
+
+    .castration_cat_anesthesia .message .icon + *
+    {
+        width: calc(100% - 100px);
+    }
+
+
+    .castration_cat_anesthesia .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .castration_cat_anesthesia .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .castration_cat_anesthesia .item
+    {
+        font-size: 15px;
+
+        padding: 18px;
+    }
+
+
+
+    /*-------------------------------------
+        Castration of a cat - Operation
+    -------------------------------------*/
+    .castration_cat_operation
+    {
+        padding: 45px 0;
+    }
+
+
+    .castration_cat_operation .block_title
+    {
+        font-size: 26px;
+
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .castration_cat_operation ul
+    {
+        width: calc(50% - 10px);
+    }
+
+
+    .castration_cat_operation ul li
+    {
+        font-size: 15px;
+
+        padding-left: 35px;
+    }
+
+    .castration_cat_operation ul li + li
+    {
+        margin-top: 10px;
+    }
+
+
+    .castration_cat_operation ul li img
+    {
+        width: 25px;
+        height: 25px;
+    }
+
+
+    .castration_cat_operation .image
+    {
+        width: calc(50% - 10px);
+    }
+
+
+    .castration_cat_operation .btn
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*------------------------------------------
+        Castration of a cat - Rehabilitation
+    ------------------------------------------*/
+    .castration_cat_rehabilitation
+    {
+        padding: 45px 0;
+    }
+
+
+    .castration_cat_rehabilitation .head
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .castration_cat_rehabilitation .block_title
+    {
+        font-size: 26px;
+    }
+
+
+    .castration_cat_rehabilitation .duration
+    {
+        font-size: 15px;
+    }
+
+
+    .castration_cat_rehabilitation .row
+    {
+        margin-bottom: -20px;
+        margin-left: -20px;
+    }
+
+    .castration_cat_rehabilitation .row > *
+    {
+        width: calc(50% - 20px);
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+
+    .castration_cat_rehabilitation .item
+    {
+        font-size: 17px;
+
+        padding: 20px;
+    }
+
+
+    .castration_cat_rehabilitation .item .thumb
+    {
+        width: 290px;
+        height: 194px;
+    }
+
+
+
+    /*-----------------------------------
+        Castration of a cat - Doctors
+    -----------------------------------*/
+    .castration_cat_doctors
+    {
+        padding: 45px 0;
+    }
+
+
+    .castration_cat_doctors .block_title
+    {
+        font-size: 26px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .castration_cat_doctors .swiper-slide
+    {
+        width: 258px;
+    }
+
+
+    .castration_cat_doctors .person .photo
+    {
+        width: 100%;
+        height: auto;
+        padding-bottom: 100%;
+    }
+
+
+
+    /*---------------------------------
+        Castration of a cat - Myths
+    ---------------------------------*/
+    .castration_cat_myths
+    {
+        padding: 45px 0;
+    }
+
+
+    .castration_cat_myths .block_title
+    {
+        font-size: 26px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .castration_cat_myths .item .front,
+    .castration_cat_myths .item .back
+    {
+        height: 354px;
+    }
+
+
+    .castration_cat_myths .item .desc
+    {
+        font-size: 16px;
+    }
+
+
+
+    /*-------------------------------
+        Castration of a cat - FAQ
+    -------------------------------*/
+    .castration_cat_FAQ
+    {
+        padding: 45px 0;
+    }
+
+
+    .castration_cat_FAQ .block_title
+    {
+        font-size: 26px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .castration_cat_FAQ .bottom
+    {
+        margin-top: 20px;
+
+        justify-content: center;
+    }
+
+
+    .castration_cat_FAQ .bottom .label
+    {
+        font-size: 17px;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .castration_cat_FAQ .bottom .btn
+    {
+        margin: 15px 0 0;
+    }
+
+
+
+    /*----------------------------------
+        Castration of a cat - Prices
+    ----------------------------------*/
+    .castration_cat_prices
+    {
+        padding: 45px 0;
+    }
+
+
+    .castration_cat_prices .block_title
+    {
+        font-size: 26px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .castration_cat_prices table th
+    {
+        font-size: 14px;
+
+        padding-bottom: 46px;
+    }
+
+    .castration_cat_prices table th:not(:empty) + th
+    {
+        padding-left: 20px;
+    }
+
+
+    .castration_cat_prices table tr
+    {
+        position: relative;
+    }
+
+
+    .castration_cat_prices table tbody tr td
+    {
+        padding-bottom: 52px;
+    }
+
+    .castration_cat_prices table tbody tr + tr td
+    {
+        padding-bottom: 10px;
+    }
+
+
+    .castration_cat_prices table td.label
+    {
+        font-size: 17px;
+
+        position: absolute;
+        bottom: 100%;
+        left: 5px;
+
+        width: 100%;
+        margin-bottom: 5px;
+        padding: 0;
+
+        border: none;
+    }
+
+    .castration_cat_prices table td.price
+    {
+        font-size: 22px;
+    }
+
+    .castration_cat_prices table td.price + td
+    {
+        padding-left: 20px;
+    }
+
+
+    .castration_cat_prices .exp
+    {
+        font-size: 15px;
+
+        margin-top: 20px;
+    }
+
+
+    .castration_cat_prices .bottom
+    {
+        font-size: 15px;
+
+        margin-top: 30px;
+        padding: 15px;
+    }
+
+
+    .castration_cat_prices .bottom .icon
+    {
+        width: 50px;
+        height: 50px;
+    }
+
+    .castration_cat_prices .bottom .icon + *
+    {
+        width: calc(100% - 65px);
+    }
+
+
+
+    /*---------------------------------
+        Castration of a cat - Order
+    ---------------------------------*/
+    .castration_cat_order
+    {
+        padding: 45px 0;
+    }
+
+
+    .castration_cat_order .data
+    {
+        padding: 18px;
+    }
+
+
+    .castration_cat_order .image
+    {
+        width: calc(100% - 334px);
+    }
+
+
+    .castration_cat_order .form
+    {
+        width: 304px;
+    }
+
+
+    .castration_cat_order .form .title
+    {
+        margin-bottom: 20px;
+    }
+
+
+
+    /*----------------------------------------
+        Castration of a cat - Action block
+    ----------------------------------------*/
+    .castration_action_block .row
+    {
+        padding: 0;
+
+        border: none;
+        border-radius: 0;
+    }
+
+
+    .castration_action_block .image
+    {
+        width: calc(50% - 10px);
+    }
+
+
+    .castration_action_block .data
+    {
+        width: calc(50% - 10px);
+    }
+
+
+    .castration_action_block .title
+    {
+        font-size: 24px;
+    }
+
+
+    .castration_action_block .btn
+    {
+        margin-top: 28px;
+    }
+}
+
+
+
+@media print,
+(max-width: 767px)
+{
+    /*--------------------------------
+        Castration of a cat - Head
+    --------------------------------*/
+    .castration_cat_head
+    {
+        padding-bottom: 30px;
+    }
+
+
+    .castration_cat_head .row
+    {
+        margin-bottom: -15px;
+        margin-left: 0;
+    }
+
+    .castration_cat_head .row > *
+    {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+
+
+    .castration_cat_head .bg
+    {
+        display: none;
+    }
+
+    .castration_cat_head .mob_bg
+    {
+        display: block;
+
+        height: 400px;
+    }
+
+
+    .castration_cat_head .bottom
+    {
+        line-height: 160%;
+    }
+
+
+
+    /*-------------------------------------
+        Castration of a cat - Important
+    -------------------------------------*/
+    .castration_cat_important .swiper-slide
+    {
+        width: 330px;
+    }
+
+
+
+    /*-----------------------------------------
+        Castration of a cat - Improves life
+    -----------------------------------------*/
+    .castration_cat_improves_life .image
+    {
+        margin: 0 auto 20px;
+    }
+
+
+    .castration_cat_improves_life .text
+    {
+        width: 100%;
+    }
+
+
+    .castration_cat_improves_life .bottom
+    {
+        line-height: 160%;
+    }
+
+
+
+    /*---------------------------------------
+        Castration of a cat - Preparation
+    ---------------------------------------*/
+    .castration_cat_preparation .step1 .swiper
+    {
+        overflow: visible !important;
+    }
+
+    .castration_cat_preparation .step1 .swiper-slide
+    {
+        width: 330px;
+    }
+
+
+    .castration_cat_preparation .step2 .row
+    {
+        margin-left: 0;
+    }
+
+    .castration_cat_preparation .step2 .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+    .castration_cat_preparation .bottom
+    {
+        line-height: 160%;
+    }
+
+
+
+    /*--------------------------------------
+        Castration of a cat - Components
+    --------------------------------------*/
+    .castration_cat_components .row
+    {
+        margin-left: 0;
+    }
+
+    .castration_cat_components .row > *
+    {
+        width: 100%;
+        margin-left: 0;
+    }
+
+
+
+    /*--------------------------------------
+        Castration of a cat - Anesthesia
+    --------------------------------------*/
+    .castration_cat_anesthesia .message
+    {
+        position: relative;
+
+        padding: 15px 80px 15px 15px;
+    }
+
+
+    .castration_cat_anesthesia .message .icon
+    {
+        position: absolute;
+        top: 0;
+        right: 3px;
+        bottom: 0;
+
+        margin: auto;
+    }
+
+
+    .castration_cat_anesthesia .message .icon + *
+    {
+        width: 100%;
+    }
+
+
+    .castration_cat_anesthesia .row
+    {
+        margin-bottom: -15px;
+        margin-left: 0;
+    }
+
+    .castration_cat_anesthesia .row > *
+    {
+        width: 100%;
+        margin-bottom: 15px;
+        margin-left: 0;
+    }
+
+
+
+    /*-------------------------------------
+        Castration of a cat - Operation
+    -------------------------------------*/
+    .castration_cat_operation ul
+    {
+        width: 100%;
+        margin-top: 20px;
+
+        order: 2;
+    }
+
+
+    .castration_cat_operation .image
+    {
+        width: 100%;
+    }
+
+
+
+    /*------------------------------------------
+        Castration of a cat - Rehabilitation
+    ------------------------------------------*/
+    .castration_cat_rehabilitation .duration
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+    .castration_cat_rehabilitation .swiper-slide
+    {
+        width: 330px;
+    }
+
+
+    .castration_cat_rehabilitation .swiper-horizontal > .swiper-pagination-bullets,
+    .castration_cat_rehabilitation .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .castration_cat_rehabilitation .swiper-pagination-custom,
+    .castration_cat_rehabilitation .swiper-pagination-fraction
+    {
+        display: flex;
+    }
+
+
+
+    /*---------------------------------
+        Castration of a cat - Myths
+    ---------------------------------*/
+    .castration_cat_myths .swiper-slide
+    {
+        width: 330px;
+    }
+
+
+    .castration_cat_myths .item .desc
+    {
+        font-size: 15px;
+    }
+
+
+
+    /*----------------------------------
+        Castration of a cat - Prices
+    ----------------------------------*/
+    .castration_cat_prices table th
+    {
+        font-size: 13px;
+    }
+
+
+    .castration_cat_prices .bottom
+    {
+        line-height: 160%;
+    }
+
+
+
+    /*---------------------------------
+        Castration of a cat - Order
+    ---------------------------------*/
+    .castration_cat_order .image
+    {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+        padding-bottom: 67.096%;
+    }
+
+
+
+    /*----------------------------------------
+        Castration of a cat - Action block
+    ----------------------------------------*/
+    .castration_action_block .image
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+
+    .castration_action_block .data
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .castration_action_block .title
+    {
+        font-size: 22px;
+    }
+
+
+    .castration_action_block .btn
+    {
+        margin-top: 24px;
+    }
+}

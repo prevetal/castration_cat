@@ -1,0 +1,182 @@
+.swiper-button-next,
+.swiper-button-prev
+{
+    color: #dbdced;
+
+    top: 0;
+    bottom: 0;
+
+    width: 60px;
+    height: 100%;
+    margin: 0;
+
+    transform: none;
+
+    border: none;
+    border-radius: 0;
+    outline: none;
+    background: none;
+}
+
+.swiper-button-next:before,
+.swiper-button-prev:before
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+
+    display: block;
+
+    width: 90px;
+    height: 100%;
+
+    content: '';
+
+    border-right: 30px solid #fff;
+    background: linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, .00) 100%);
+}
+
+.swiper-button-prev:before
+{
+    right: auto;
+    left: 0;
+
+    border: none;
+    border-left: 30px solid #fff;
+    background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, .00) 100%);
+}
+
+
+.swiper-button-next span,
+.swiper-button-prev span
+{
+    display: flex;
+
+    width: 60px;
+    height: 60px;
+    margin: auto;
+
+    transition: .2s linear;
+
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #f4f7fc;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.swiper-button-prev
+{
+    left: 0;
+}
+
+.swiper-button-next
+{
+    right: 0;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after
+{
+    display: none;
+}
+
+
+.swiper-button-next svg,
+.swiper-button-prev svg
+{
+    display: block;
+
+    width: 12px;
+    height: 22px;
+}
+
+.swiper-button-next svg
+{
+    transform: rotate(180deg);
+}
+
+
+.swiper-button-next:hover span,
+.swiper-button-prev:hover span
+{
+    color: #fff;
+
+    border-color: #fff;
+    background: #257fdc;
+}
+
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled
+{
+    display: none;
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction
+{
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+
+    width: 100%;
+    height: 8px;
+    margin-top: 16px;
+
+    pointer-events: none;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.swiper-pagination-bullet
+{
+    display: block;
+
+    width: 8px;
+    height: 8px;
+
+    transition: opacity .2s linear;
+    pointer-events: auto;
+
+    opacity: .5;
+    border-radius: 50%;
+    background: #0f256d;
+}
+
+.swiper-pagination-bullet + .swiper-pagination-bullet
+{
+    margin-left: 12px !important;
+}
+
+.swiper-pagination-bullet:hover,
+.swiper-pagination-bullet.active
+{
+    opacity: 1;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet
+{
+    margin: 0;
+}
