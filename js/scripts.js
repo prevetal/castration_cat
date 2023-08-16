@@ -196,11 +196,11 @@ document.addEventListener('DOMContentLoaded', function () {
 					},
 					1280: {
 						spaceBetween: 24,
-						slidesPerView: 3
+						slidesPerView: 2
 					},
 					1440: {
 						spaceBetween: 30,
-						slidesPerView: 3
+						slidesPerView: 2
 					}
 				},
 				on: {
@@ -233,6 +233,10 @@ document.addEventListener('DOMContentLoaded', function () {
 				watchSlidesProgress: true,
 				slideActiveClass: 'active',
 				slideVisibleClass: 'visible',
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev'
+				},
 				breakpoints: {
 					0: {
 						spaceBetween: 20,
@@ -242,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function () {
 						spaceBetween: 20,
 						slidesPerView: 2
 					},
-					1280: {
+					1024: {
 						spaceBetween: 24,
 						slidesPerView: 3
 					},

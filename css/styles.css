@@ -1627,6 +1627,19 @@
 }
 
 
+.castration_cat_doctors .swiper-button-next:before
+{
+    border-right: 30px solid #f4f7fc;
+    background: linear-gradient(270deg, #f4f7fc 0%, rgba(244, 247, 252, .00) 100%);
+}
+
+.castration_cat_doctors .swiper-button-prev:before
+{
+    border-left: 30px solid #f4f7fc;
+    background: linear-gradient(90deg, #f4f7fc 0%, rgba(244, 247, 252, .00) 100%);
+}
+
+
 .castration_cat_doctors .block_title
 {
     color: #0f256d;
@@ -1635,12 +1648,6 @@
     line-height: 120%;
 
     margin-bottom: 45px;
-}
-
-
-.castration_cat_doctors .swiper
-{
-    overflow: visible !important;
 }
 
 
@@ -4146,5 +4153,21 @@
     .castration_action_block .btn
     {
         margin-top: 24px;
+    }
+
+
+
+    /*-----------------------------------
+        Castration of a cat - Doctors
+    -----------------------------------*/
+    .castration_cat_doctors .swiper
+    {
+        overflow: visible !important;
+    }
+
+    .castration_cat_doctors .swiper-button-next,
+    .castration_cat_doctors .swiper-button-prev
+    {
+        display: none;
     }
 }
